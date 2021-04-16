@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mister Blogger</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+
+<body>
+    <div class="main-screen" onclick="toggleMenu()"></div>
+    <div class="main-container flex-column">
+        <header class="main-header ">
+            <div class="logo">Blogin</div>
+            <nav>
+                <ul class="main-nav  clean-list flex align-center" onclick="toggleMenu()">
+
+                    <li >
+                        <div class="dropdown">
+                            <button class="dropbtn"onclick="onDropDown()">Jornal</button>
+                            <div class="dropdown-content">
+                                <a href="#">October 2016</a>
+                                <a href="#">January 2017</a>
+                                <a href="#">April 2017</a>
+                                <a href="#">July 2017</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="btn-menu" onclick="toggleMenu()">☰</button>
+        </header>
+        <section class="main-content flex-column space-between ">
+            <div class="main-cards space-between ">
+                <div class="card">
+                    <img class="card-img" src="../img/blog-card1.jpg" alt="">
+                    <div class="main-txt-content space-between ">
+                        <h2 class="card-header">Duis aute irure dolor in
+                            henderit in voluptate.</h2>
+                        <div class="txt">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur...</p>
+                        </div>
+                        <button class="card-btn" onclick="onOpenModal()">Continue Reading </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="../img/blog-card2.jpg" alt="">
+                    <div class="main-txt-content space-between ">
+                        <h2 class="card-header">Duis aute irure dolor in
+                            henderit in voluptate.</h2>
+                        <div class="txt">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur...</p>
+                        </div>
+                        <button class="card-btn" onclick="onOpenModal()">Continue Reading </button>
+                    </div>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="../img/blog-card3.jpg" alt="">
+                    <div class="main-txt-content space-between ">
+                        <h2 class="card-header">Duis aute irure dolor in
+                            henderit in voluptate.</h2>
+                        <div class="txt">
+                            <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commo doconsequat, sunt in culpa qui officia deserunt mollit anim id est laborum. </p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla
+                                pariatur...</p>
+                        </div>
+                        <button class="card-btn" onclick="onOpenModal()">Continue Reading </button>
+                    </div>
+                </div>
+            </div>
+            <section class="main-pager flex space-between">
+                <button class="prev">Previous</button>
+                <button class="next">Next</button>
+            </section>
+        </section>
+
+
+
+        <footer class="footer flex flex-column ">
+            <div class="logo">
+                Blogin
+            </div>
+            <small>© 2014 Blogin.com - All Rights Reserved - Find more free Templates at Pixelhint.com</small>
+            <section class="footer-nav ">
+                <ul class="social-nav flex justify-center align-center clean-list ">
+                    <li>
+                        <a class="social-icon facebook-bg" href="#">
+                            <img src="../img/facebook-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-icon twitter-bg" href="#">
+                            <img src="../img/twitter-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-icon be-bg" href="#">
+                            <img src="../img/be-icon.png" alt="">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="social-icon basketball-bg" href="#">
+                            <img src="../img/basketball-icon.png" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </section>
+        </footer>
+    </div>
+    <div class="modal">
+        <div class="modal-content flex-column align-center">
+            <div class="modal-header">
+                <h2>Join us to get access to the latest stories!</h2>
+            </div>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit gtg.
+                Temporibus at, itaque accusamus accusantium animi maxime
+                ratione laboriosam consequuntur sequi facere, corrupti magni.
+            </p>
+            <div class="email-text-box">
+                <label for="email">Email: </label>
+                <input id="email" type="email">
+                <span class="close" onclick="onCloseModal()"><button>Submit</button></span>
+            </div>
+            <button class=" btn-modal close" onclick="onCloseModal()">CLOSE</button>
+        </div>
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
